@@ -1,0 +1,182 @@
+:root{
+    --clair: rgba(85, 168, 201);
+    --sombre: rgb(30, 107, 138);
+    --bg: rgba(135, 207, 235, 0.322);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    text-align: center;
+    font-size: large;
+}
+
+/*******************Ici vas se gerer l'affichage du post concerné*/
+
+#root{
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 95%;
+    height: 400px;
+    align-self:center;
+    background-color: var(--bg);
+}
+
+.image img{
+    height: 400px;
+    width: auto;
+}
+
+.post_title {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    margin-left: 2%;
+}
+
+
+.short_content{
+    font-weight: bold;
+    font-size: x-large;
+    text-align: left;
+    padding: 7px;
+    padding-left: 10px;
+    margin-left: 2%;
+}
+
+
+.post_content {
+    font-size: larger;
+    text-align: left;
+    padding: 7px;
+    width: 70%;
+    margin-left: 2%;
+}
+
+.post_autor{
+    font-size: 25px;
+    text-align: left;
+    padding: 7px;
+    padding-left: 10px;
+    margin-left: 2%;
+}
+
+.post_autor span{
+    font-weight: bold;
+}
+
+h2{
+    text-align: left;
+    margin-left: 30px;
+}
+
+#comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*======= Section pour les nouveaux commentaires */
+.comment_form_new{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--bg);
+    width: 90%;
+}
+
+.comment_form_new .user_pp{
+    width: 100px;
+    height: auto;
+}
+.comment_form_new .user_pp img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50% 50%;
+}
+
+.form_div{
+    width: 84%;
+}
+
+.form{
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    font-size: 25px;
+}
+.div .text{
+    height: 40px;
+    width: 99.5%;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.submit{
+    width: 17%;
+    height: 40px;
+    font-size: 20px;
+    background:linear-gradient(var(--sombre), var(--clair), var(--sombre));
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+}
+.submit:hover{
+    font-weight: bolder;
+    background:linear-gradient(var(--sombre), var(--clair) 30%, var(--sombre));
+}
+#submit-div{
+    background: var(--sombre);
+}
+
+.comment_form{
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 90%;
+    margin-top: 7px;
+    padding-left: 15px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.comment_form .users_profil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50%;
+    margin-top: 5px;
+    border: 1px solid blue;
+}
+
+.message .owner{
+    font-weight: bolder;
+    width: auto;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.message .content {
+    margin-left: 10px;
+    font-size: 18px;
+}

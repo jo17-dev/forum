@@ -1,0 +1,72 @@
+:root{
+    --clair: rgba(85, 168, 201);
+    --sombre: rgb(30, 107, 138);
+    --bg: rgba(135, 207, 235, 0.322);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg);
+    text-align: center;
+}
+
+#h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+.form{
+    width: 40%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--sombre);
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    font-size: 25px;
+    background-color: var(--sombre);
+    background:linear-gradient(var(--sombre), var(--clair), var(--sombre));
+}
+.div .text{
+    height: 30px;
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 25px;
+}
+
+.submit{
+    width: 25%;
+    height: 35px;
+    font-size: 20px;
+    background:linear-gradient(var(--sombre), var(--clair), var(--sombre));
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+}
+.submit:hover{
+    font-weight: bolder;
+    background:linear-gradient(var(--sombre), var(--clair) 30%, var(--sombre));
+}
+#submit-div{
+    background: var(--sombre);
+}
+
+#root .post_title{
+    font-weight: bold;
+}

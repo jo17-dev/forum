@@ -1,0 +1,89 @@
+:root{
+    --clair: rgba(85, 168, 201);
+    --sombre: rgb(30, 107, 138);
+    --bg: rgba(135, 207, 235, 0.322);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    text-align: center;
+}
+
+/*******************Ici vas se gerer l'affichage de chaque post*/
+
+#root{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    max-width: 400px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid var(--sombre);
+    border-radius: 2px 2px 2px 2px;
+    cursor: pointer;
+    background: var(--sombre);
+}
+
+.item .link {
+    text-decoration: none;
+    color: black;
+}
+
+.item .link .img {
+    width: 100%;
+    height: auto;
+}
+
+.item .link .img img{
+    /*height: 225px;
+    width: auto; */
+    width: 100%;
+    height: auto;
+}
+
+.item .post_info{
+    width: 100%;
+    height: 125px;
+    background-color: var(--clair);
+    text-align: left;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.short_content, .autor, .commentaires, .likes{
+    padding-left: 6px;
+}
+
+.autor span, .commentaires span {
+    font-weight: bolder;
+}
+
+.commentaires{
+    display: flex;
+    flex-direction: column;
+}
+
+.commentaires a, .likes a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: blue;
+}
+.commentaires a:hover, .likes a:hover{
+    text-decoration: underline;
+}
+
+.likes a:active{
+    font-weight: bold;
+}

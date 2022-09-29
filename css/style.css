@@ -1,0 +1,81 @@
+:root{
+    --clair: rgba(85, 168, 201);
+    --sombre: rgb(30, 107, 138);
+    --bg: rgba(135, 207, 235, 0.322);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+body{
+    background-color: white;
+}
+#acceuil-img{
+    background: linear-gradient(var(--sombre), var(--bg));
+    opacity: 0.3;
+    height: 50vh;
+}
+
+/*================Le body======================*/
+
+#contenu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#root{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#root .item{
+    width: 24%;
+    height: 400px;
+    margin: 5px;
+    background-color: var(--clair);
+
+}
+#root .item img{
+    width: 100%;
+    height: 50%;
+}
+#root .item ul{
+    list-style-type: none;
+    padding-left: 3px;
+}
+#root .item ul li{
+    border-top: 1px solid var(--sombre);
+    border-left: 2px solid var(--sombre);
+    padding: 2px;
+    margin: 2px;
+}
+#root .item ul li g{
+    color: white;
+    font-weight: bold;
+}
+#root .item button{
+    position: relative;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: unset;
+    border: none;
+    width: 95%;
+    height: 35px;
+    background-color: var(--sombre);
+}
+#root .item button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

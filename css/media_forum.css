@@ -1,0 +1,38 @@
+@media (max-width: 380px) {
+    .form{
+        width: 97vw;
+    }
+
+    .submit{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .form{
+        width: 90vw;
+    }
+    
+    .submit{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form{
+        width: 75vw;
+    }
+    
+    .submit{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
+}

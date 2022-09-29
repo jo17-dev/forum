@@ -1,0 +1,231 @@
+#acceuil-img{
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(to top, var(--sombre) 33%, var(--clair), var(--bg));
+}
+
+#acceuil-img img{
+    display: none;
+}
+
+#acceuil-img{
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(to top, var(--sombre) 33%, var(--clair), var(--bg));
+}
+
+#acceuil-img img{
+    display: none;
+}
+
+
+@media (min-width: 1700px) {
+
+    *{
+        font-size: x-large;
+    }
+
+    nav #barres-conteneur ul li{
+        padding: 5px;
+        font-size: x-large;
+    }
+    nav #barres-conteneur ul li a{
+        font-size: x-large;
+        padding: 5px;
+    }
+
+    #root{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+    }
+
+    #root .item {
+        width: 350px;
+        height: max-content;
+    }
+
+}
+
+@media (min-width: 1282px) and (max-width: 1700px) {
+    nav #barres-conteneur{
+        position: absolute;
+        right: 15px;
+        font-size: large;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1365px) {
+    nav #barres-conteneur ul li{
+        padding: 5px;
+        font-size: 17px;
+    }
+    nav #barres-conteneur ul li a{
+        font-size: 17px;
+        padding: 5px;
+    }
+
+    #root .item {
+        width: 29%;
+    }
+}
+
+/*Pour les Tablettes*/
+
+@media (max-width: 1000px) {  
+        
+    nav #responsive-content{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+    nav #barres-conteneur{
+        height: 45px;
+        width: 34%;
+    }
+    nav #barres-conteneur ul li, nav #barres-conteneur ul li a{
+        padding: 2px;
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 3px;
+        height: 27px;
+    }
+    /*#root .item{
+        height: 420px;
+        width: 32%;
+    }*/
+    #root .item {
+        height: 420px;
+        width: 28%;
+    }
+
+}
+
+@media (min-width: 780px) and (max-width: 930px) {
+    
+    nav #responsive-content{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+    nav #barres-conteneur{
+        height: 45px;
+        width: 34%;
+    }
+    nav #barres-conteneur ul li, nav #barres-conteneur ul li a{
+        padding: 2px;
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 3px;
+        height: 27px;
+    }
+    
+    #root .item{
+        width: 47%;
+        margin: 8px;
+        margin-top: 16px;
+        height: max-content;
+    }
+    
+    #root .item .post_info{
+        margin-top: 1px;
+    }
+}
+
+@media (max-width: 780px){
+
+    nav #responsive-content{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+    nav #barres-conteneur{
+        height: 45px;
+        width: 45%;
+    }
+    nav #barres-conteneur ul li, nav #barres-conteneur ul li a{
+        padding: 2px;
+        font-size: 17px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        margin-left: 3px;
+        height: 27px;
+    }
+
+    #root .item{
+        width: 47%;
+        margin: 8px;
+        margin-top: 16px;
+        height: max-content;
+    }
+    
+    #root .item .post_info{
+        margin-top: 1px;
+    }
+
+}
+
+
+@media (max-width: 600px){
+    nav #barres-conteneur{
+        margin: 0;
+        width: 75%;
+        height: 45px;
+        top: 1px;
+        color: white;
+    }
+    nav #barres-conteneur ul{
+        height: 45px;
+    }
+    nav #barres-conteneur ul li, nav #barres-conteneur ul li a{
+        height: 20px;
+        margin-top: 10px;
+        margin-left: 4px;
+        font-size: 14px;
+    }
+    
+    nav #search-content{
+        margin: 0;
+        margin-top: 50px;
+        position: absolute; 
+        width: 99vw;
+        left: 2px;
+    }
+    
+    nav #search-content #search{
+        width: 100%;
+    }
+    nav #responsive-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #root .item{
+        width: 95%;
+        height: max-content;
+    }
+    #root .item .post_info{
+        margin-top: 2px;
+    }
+    
+}
+
+
+@media (min-width: 426px) and (max-width: 600px) {
+    nav #responsive-content{
+        width: 90%;
+    }
+    nav #barres-conteneur{
+        margin: 0;
+        width: 80%;
+        position: absolute;
+        right: -17%;
+    }
+    nav #barres-conteneur ul li, nav #barres-conteneur ul li a{
+        font-size: 16px;
+        height: 25px;
+        margin-right: 5px;
+    }
+}
