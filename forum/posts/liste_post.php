@@ -56,7 +56,7 @@ if(isset($_GET["include"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/listposts.css">
     <link rel="stylesheet" href="../../css/navBar.css">
-    <title>Document</title>
+    <title>Sujets de discussion</title>
 </head>
 <body>
     <nav>
@@ -84,43 +84,44 @@ if(isset($_GET["include"])){
                 <div class="img">
                     <?php include("upload_posts_img.php"); ?>
                 </div>
-                <div class="post_info">
-                    <div class="id_post" style="display: none;"><?php  echo $id_post; ?></div>
-                    <div class="short_content">
-                        <?php
-                        echo $post_item["short_title"];
-                        ?>
-                    </div>
-                    <div class="autor">
-                        <span>Auteur: </span>
-                        <?php
-                        $nom = executer("SELECT nom, prenom From users WHERE id='$owner_id'");
-                        echo $nom[0]["nom"] . " " . $nom[0]["prenom"];
-                        ?>
-                    </div>
-
-                    <div class="commentaires">
-                        <span>Commentaires:
-                        <p style="display: inline;font-weight: 100;">
-                            <?php
-                            // ce lien ne fonctionne qu'en un seul sens, ce qui est facheux
-                            $_SESSION["id_post"] = $id_post;
-                            echo count(executer("SELECT * FROM commentaires WHERE id_post=$id_post"))
-                            ?>
-                        </p>
-                        </span>
-
-                    </div>
-                    <div class="likes">
-                    <span style="cursor: pointer; font-weight: bold;" class="like">Likes: </span>
-                        <span class = "nbre_likes">
-                            <?php
-                            echo $post_item["nombre_de_likes"];
-                            ?>
-                        </span>
-                    </div>
-                </div>
             </a>
+            <div class="post_info">
+                <div class="id_post" style="display: none;"><?php  echo $id_post; ?></div>
+                <div class="short_content">
+                    <?php
+                    echo $post_item["short_title"];
+                    ?>
+                </div>
+                <div class="autor">
+                    <span>Auteur: </span>
+                    <?php
+                    $nom = executer("SELECT nom, prenom From users WHERE id='$owner_id'");
+                    echo $nom[0]["nom"] . " " . $nom[0]["prenom"];
+                    ?>
+                </div>
+
+                <div class="commentaires">
+                    <span>Commentaires:
+                    <p style="display: inline;font-weight: 100;">
+                        <?php
+                        // ce lien ne fonctionne qu'en un seul sens, ce qui est facheux
+                        $_SESSION["id_post"] = $id_post;
+                        echo count(executer("SELECT * FROM commentaires WHERE id_post=$id_post"))
+                        ?>
+                    </p>
+                    </span>
+
+                </div>
+                <div class="likes">
+                <span style="cursor: pointer; font-weight: bold;" class="like">Likes: </span>
+                    <span class = "nbre_likes">
+                        <?php
+                        echo $post_item["nombre_de_likes"];
+                        ?>
+                    </span>
+                </div>
+            </div>
+            
         </div>
 
         <?php } ?>
